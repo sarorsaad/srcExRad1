@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.layout {
+  display: flex;
+  min-height: 100vh; /* Ensures it takes the minimum full viewport height */
+}
+
+.aside {
+  width: 250px; /* Adjust the width of your Aside component as needed */
+  flex-shrink: 0; /* Prevents the Aside from shrinking */
+}
+
+.main-content {
+  flex-grow: 1; /* Allows the main content to grow and fill the available space */
+}
+/* Global CSS file */
+.report-button {
+  background-color: #000; /* black background */
+  transition: background-color 0.3s; /* smooth transition for hover effect */
+}
+
+.report-button:hover {
+  background-color: #00FF00; /* green on hover */
+}
